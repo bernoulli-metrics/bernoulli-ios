@@ -61,11 +61,10 @@ while(condition) { \
     } withStubResponse:^OHHTTPStubsResponse*(NSURLRequest *request) {
         // Stub all those requests with "Hello World!" string
         NSData* stubData = [@"{\"status\": \"ok\", \"value\": [{\"status\": 1, \"user_id\": \"s59\", \"segmentName\": null, \"variant\": \"blue\", \"segment\": null, \"id\": \"first\", \"name\": \"First Experiment\"}]}" dataUsingEncoding:NSUTF8StringEncoding];
-        NSDictionary *expectedResponseDict = @{@"Success" : @"Yes"};
         
         NSMutableDictionary* mutableHeaders = [NSMutableDictionary dictionary];
         mutableHeaders[@"Content-Type"] = @"application/json";
-        NSDictionary *httpHeaders = [NSDictionary dictionaryWithDictionary:mutableHeaders]; // make immutable again
+        NSDictionary *httpHeaders = [NSDictionary dictionaryWithDictionary:mutableHeaders];
         
         return [OHHTTPStubsResponse responseWithData:stubData statusCode:200 headers:httpHeaders];
     }];
@@ -85,7 +84,57 @@ while(condition) { \
     }]);
     
     WaitUntilBlockCompletes();
-   
+}
+
+- (void)testHandlesGetExperimentsError
+{
+    [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
+        return YES;
+    } withStubResponse:^OHHTTPStubsResponse*(NSURLRequest *request) {
+        NSData* stubData = [@"{\"status\": \"error\", \"message\": \"Error with experiments\"}" dataUsingEncoding:NSUTF8StringEncoding];
+        
+        NSMutableDictionary* mutableHeaders = [NSMutableDictionary dictionary];
+        mutableHeaders[@"Content-Type"] = @"application/json";
+        NSDictionary *httpHeaders = [NSDictionary dictionaryWithDictionary:mutableHeaders];
+        
+        return [OHHTTPStubsResponse responseWithData:stubData statusCode:200 headers:httpHeaders];
+    }];
+    
+    NSArray *arr = [NSArray arrayWithObject:@"first"];
+    
+    StartBlock();
+    XCTAssertTrue([Bernoulli getExperimentsForIds:arr clientId:@"1" userId:@"s59" userData:nil success:^(NSArray *experiments) {
+        XCTFail(@"Expected an error");
+        EndBlock();
+    } error:^(NSString *message) {
+        XCTAssertTrue([message isEqualToString:@"Error with experiments"]);
+        EndBlock();
+    }]);
+    
+    WaitUntilBlockCompletes();
+}
+
+- (void)testGoalAttainedSuccess
+{
+    [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
+        return YES;
+    } withStubResponse:^OHHTTPStubsResponse*(NSURLRequest *request) {
+        NSData* stubData = [@"{\"status\": \"ok\", \"value\": true}" dataUsingEncoding:NSUTF8StringEncoding];
+        
+        NSMutableDictionary* mutableHeaders = [NSMutableDictionary dictionary];
+        mutableHeaders[@"Content-Type"] = @"application/json";
+        NSDictionary *httpHeaders = [NSDictionary dictionaryWithDictionary:mutableHeaders];
+        
+        return [OHHTTPStubsResponse responseWithData:stubData statusCode:200 headers:httpHeaders];
+    }];
+    
+    StartBlock();
+    XCTAssertTrue([Bernoulli goalAttainedForId:@"first" clientId:@"1" userId:@"s59" callback:^(BOOL success) {
+        XCTAssertTrue(success);
+        EndBlock();
+    }]);
+    
+    WaitUntilBlockCompletes();
 }
 
 @end

@@ -16,5 +16,10 @@
                           success:(void (^)(NSArray *experiments))successBlock
                             error:(void (^)(NSString *message))errorBlock;
 
++ (BOOL)goalAttainedForId:(NSString*)experimentId
+                 clientId:(NSString*)clientId
+                   userId:(NSString*)userId
+                 callback:(void (^)(BOOL))callbackBlock;
+
 extern NSString *const URL;
 @end
