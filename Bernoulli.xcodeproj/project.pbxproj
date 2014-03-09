@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D806518C18CC0F9300AEACF3 /* libPods-OHHTTPStubs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D806518B18CC0F9300AEACF3 /* libPods-OHHTTPStubs.a */; };
 		D82A9DA318CB82B000B32093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82A9DA218CB82B000B32093 /* Foundation.framework */; };
 		D82A9DA818CB82B000B32093 /* Bernoulli.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D82A9DA718CB82B000B32093 /* Bernoulli.h */; };
 		D82A9DAA18CB82B000B32093 /* Bernoulli.m in Sources */ = {isa = PBXBuildFile; fileRef = D82A9DA918CB82B000B32093 /* Bernoulli.m */; };
@@ -16,6 +17,12 @@
 		D82A9DB718CB82B000B32093 /* libBernoulli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D82A9D9F18CB82B000B32093 /* libBernoulli.a */; };
 		D82A9DBD18CB82B100B32093 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D82A9DBB18CB82B100B32093 /* InfoPlist.strings */; };
 		D82A9DBF18CB82B100B32093 /* BernoulliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D82A9DBE18CB82B100B32093 /* BernoulliTests.m */; };
+		D82A9DCA18CB830700B32093 /* Experiment.m in Sources */ = {isa = PBXBuildFile; fileRef = D82A9DC918CB830700B32093 /* Experiment.m */; };
+		D82F9EF818CC0DE200E22250 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D82F9EF718CC0DE200E22250 /* libPods.a */; };
+		D88C59B118CBF37C0070577C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88C59B018CBF37C0070577C /* CoreGraphics.framework */; };
+		D88C59B218CBF62D0070577C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88C59B018CBF37C0070577C /* CoreGraphics.framework */; };
+		D88C59B618CBF77E0070577C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88C59B518CBF77E0070577C /* SystemConfiguration.framework */; };
+		D90AFF107AB647A5B231BA8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45928232FA5743ECBCF6C541 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		45928232FA5743ECBCF6C541 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D806518B18CC0F9300AEACF3 /* libPods-OHHTTPStubs.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-OHHTTPStubs.a"; path = "Pods/build/Debug-iphoneos/libPods-OHHTTPStubs.a"; sourceTree = "<group>"; };
 		D82A9D9F18CB82B000B32093 /* libBernoulli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBernoulli.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82A9DA218CB82B000B32093 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D82A9DA618CB82B000B32093 /* Bernoulli-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bernoulli-Prefix.pch"; sourceTree = "<group>"; };
@@ -53,6 +62,15 @@
 		D82A9DBA18CB82B100B32093 /* BernoulliTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BernoulliTests-Info.plist"; sourceTree = "<group>"; };
 		D82A9DBC18CB82B100B32093 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D82A9DBE18CB82B100B32093 /* BernoulliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BernoulliTests.m; sourceTree = "<group>"; };
+		D82A9DC818CB830700B32093 /* Experiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Experiment.h; sourceTree = "<group>"; };
+		D82A9DC918CB830700B32093 /* Experiment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Experiment.m; sourceTree = "<group>"; };
+		D82F9EF518CC0B1C00E22250 /* libPods-Nocilla.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Nocilla.a"; path = "Pods/build/Debug-iphoneos/libPods-Nocilla.a"; sourceTree = "<group>"; };
+		D82F9EF718CC0DE200E22250 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		D88C59B018CBF37C0070577C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D88C59B318CBF67B0070577C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D88C59B518CBF77E0070577C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D88C59B718CC08620070577C /* libPods-Nocilla.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Nocilla.a"; path = "Pods/build/Debug-iphoneos/libPods-Nocilla.a"; sourceTree = "<group>"; };
+		DBC080882A794931B4EA774B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88C59B118CBF37C0070577C /* CoreGraphics.framework in Frameworks */,
 				D82A9DA318CB82B000B32093 /* Foundation.framework in Frameworks */,
+				D90AFF107AB647A5B231BA8D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D806518C18CC0F9300AEACF3 /* libPods-OHHTTPStubs.a in Frameworks */,
+				D82F9EF818CC0DE200E22250 /* libPods.a in Frameworks */,
+				D88C59B618CBF77E0070577C /* SystemConfiguration.framework in Frameworks */,
+				D88C59B218CBF62D0070577C /* CoreGraphics.framework in Frameworks */,
 				D82A9DB718CB82B000B32093 /* libBernoulli.a in Frameworks */,
 				D82A9DB118CB82B000B32093 /* XCTest.framework in Frameworks */,
 				D82A9DB418CB82B000B32093 /* UIKit.framework in Frameworks */,
@@ -85,6 +109,7 @@
 				D82A9DB818CB82B000B32093 /* BernoulliTests */,
 				D82A9DA118CB82B000B32093 /* Frameworks */,
 				D82A9DA018CB82B000B32093 /* Products */,
+				DBC080882A794931B4EA774B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +125,17 @@
 		D82A9DA118CB82B000B32093 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D806518B18CC0F9300AEACF3 /* libPods-OHHTTPStubs.a */,
+				D82F9EF718CC0DE200E22250 /* libPods.a */,
+				D82F9EF518CC0B1C00E22250 /* libPods-Nocilla.a */,
+				D88C59B718CC08620070577C /* libPods-Nocilla.a */,
+				D88C59B518CBF77E0070577C /* SystemConfiguration.framework */,
+				D88C59B318CBF67B0070577C /* CFNetwork.framework */,
+				D88C59B018CBF37C0070577C /* CoreGraphics.framework */,
 				D82A9DA218CB82B000B32093 /* Foundation.framework */,
 				D82A9DB018CB82B000B32093 /* XCTest.framework */,
 				D82A9DB318CB82B000B32093 /* UIKit.framework */,
+				45928232FA5743ECBCF6C541 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,6 +146,8 @@
 				D82A9DA718CB82B000B32093 /* Bernoulli.h */,
 				D82A9DA918CB82B000B32093 /* Bernoulli.m */,
 				D82A9DA518CB82B000B32093 /* Supporting Files */,
+				D82A9DC818CB830700B32093 /* Experiment.h */,
+				D82A9DC918CB830700B32093 /* Experiment.m */,
 			);
 			path = Bernoulli;
 			sourceTree = "<group>";
@@ -150,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D82A9DC218CB82B100B32093 /* Build configuration list for PBXNativeTarget "Bernoulli" */;
 			buildPhases = (
+				69D91678D6074E76877B3B2A /* Check Pods Manifest.lock */,
 				D82A9D9B18CB82B000B32093 /* Sources */,
 				D82A9D9C18CB82B000B32093 /* Frameworks */,
 				D82A9D9D18CB82B000B32093 /* CopyFiles */,
+				7DE8285557EB43318EA6D8BA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,11 +256,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69D91678D6074E76877B3B2A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE8285557EB43318EA6D8BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D82A9D9B18CB82B000B32093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82A9DCA18CB830700B32093 /* Experiment.m in Sources */,
 				D82A9DAA18CB82B000B32093 /* Bernoulli.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +401,7 @@
 		};
 		D82A9DC318CB82B100B32093 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC080882A794931B4EA774B /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Bernoulli.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -342,6 +414,7 @@
 		};
 		D82A9DC418CB82B100B32093 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC080882A794931B4EA774B /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Bernoulli.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -409,6 +482,7 @@
 				D82A9DC418CB82B100B32093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D82A9DC518CB82B100B32093 /* Build configuration list for PBXNativeTarget "BernoulliTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +491,7 @@
 				D82A9DC718CB82B100B32093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

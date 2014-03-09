@@ -1,0 +1,5 @@
+platform :ios, '6.0'
+pod 'AFNetworking', '~> 2.2'
+pod 'Nocilla'
+pod 'OHHTTPStubs'
+link_with 'Bernoulli', 'BernoulliTests'

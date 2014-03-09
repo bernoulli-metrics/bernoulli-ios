@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface Bernoulli : NSObject
++ (BOOL)getExperimentsForIds:(NSArray*)experimentIds
+                            clientId:(NSString *)clientId
+                           userId:(NSString *)userId
+                         userData:(NSDictionary *)userData
+                          success:(void (^)(NSArray *experiments))successBlock
+                            error:(void (^)(NSString *message))errorBlock;
 
+extern NSString *const URL;
 @end
