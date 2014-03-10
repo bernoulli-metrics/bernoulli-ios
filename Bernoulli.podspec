@@ -11,4 +11,5 @@ Pod::Spec.new do |spec|
   spec.framework    = 'SystemConfiguration,CFNetwork,CoreGraphics'
   spec.requires_arc = true
   spec.ios.deployment_target = '7.0'
+  spec.dependency 'AFNetworking'
 end
